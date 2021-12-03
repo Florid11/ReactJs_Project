@@ -5,8 +5,8 @@ export class CustomerDataService {
         return http.get('/customers');
     }
 
-    static addCustomers(customers){
-        return http.post('/customers',customers);
+    static addCustomers(customer){
+        return http.post('/customers',customer);
     }
 
     deleteCustomers(id){

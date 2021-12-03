@@ -1,15 +1,15 @@
 import http from "../http-common/http-common";
 
 export class CustomerDataService {
-    getCustomers(){
+    getCustomer(){
         return http.get('/customers');
     }
 
-    static addCustomers(customer){
+    static addCustomer(customer){
         return http.post('/customers',customer);
     }
 
-    deleteCustomers(id){
+    deleteCustomer(id){
         return http.delete('/customers' + id);
     }
 }

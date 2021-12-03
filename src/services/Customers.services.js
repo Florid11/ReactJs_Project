@@ -2,7 +2,7 @@ import http from "../http-common/http-common";
 
 export class CustomerDataService {
     getCustomers(){
-        return http.get('/costumers');
+        return http.get('/customers');
     }
 
     static addCustomers(customers){

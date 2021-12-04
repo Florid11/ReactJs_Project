@@ -5,12 +5,12 @@ export class CustomerDataService {
         return http.get('/customers');
     }
 
-    static addCustomer(customer){
-        return http.post('/customers',customer);
+    static addCustomer(customers){
+        return http.post('/customers',customers);
     }
 
     deleteCustomer(id){
-        return http.delete('/customers' + id);
+        return http.delete('/customers/' + id);
     }
 }
 
